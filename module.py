@@ -29,4 +29,9 @@ class Pet:
         return f"{self.name} has now gained {amount}"
     
     def check(self):
-        return f"{self.name} is healthy"
+        if(self.hunger > 70 ):
+            return f"{self.name} is healthy"
+        elif(self.energy < 20):
+            return f"{self.name} is tired"
+        elif(self.happiness < 20):
+            return f"{self.name} is not happy happy please please play play"
